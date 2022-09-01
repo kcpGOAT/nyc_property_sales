@@ -1,5 +1,5 @@
 SELECT  
-	year_built, 
+    year_built, 
     COUNT(*) AS num_built
     FROM 
         nyc_sales
