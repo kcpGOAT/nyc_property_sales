@@ -1,5 +1,5 @@
 CREATE TABLE nyc_sales (
-	  id SERIAL, 
+	id SERIAL, 
   	borough INT, 
   	neighborhood VARCHAR(255), 
   	building_class_category VARCHAR(255), 
