@@ -1,4 +1,4 @@
-CREATE TABLE borough_nb_raw AS
+WITH borough_nb_raw AS (
 	SELECT 
      	borough, 
      	neighborhood, 
@@ -10,10 +10,10 @@ CREATE TABLE borough_nb_raw AS
             sale_price > 0
      	GROUP BY 
      		borough, 
-     		neighborhood;
+     		neighborhood
+),
 
-
-CREATE TABLE borough_nb_ranks AS
+borough_nb_ranks AS (
     SELECT 
         borough, 
         neighborhood,
@@ -22,7 +22,8 @@ CREATE TABLE borough_nb_ranks AS
             (PARTITION BY borough
              ORDER BY sale_price DESC)
         FROM 
-            borough_nb_raw;
+            borough_nb_raw
+)
 
 SELECT * 
 	FROM 
