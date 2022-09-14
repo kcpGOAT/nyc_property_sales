@@ -1,5 +1,5 @@
 SELECT
-	building_class_category, 
+	building_class_category AS class, 
 	COUNT(building_class_category) AS num_built
     FROM 
     	nyc_sales
