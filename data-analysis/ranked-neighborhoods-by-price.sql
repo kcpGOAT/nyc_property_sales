@@ -11,8 +11,7 @@ WITH borough_nb_raw AS (
      	GROUP BY 
      		borough, 
      		neighborhood
-),
-
+), 
 borough_nb_ranks AS (
     SELECT 
         borough, 
