@@ -1,1 +1,2 @@
 # nyc_property_sales
+The purpose of this project is to utilize SQL in a manner that helps us answer specific insights about the world of property sales, specifically that of New York City. For instance, one may desire to answer how many sales were made per year throughout the 20th century, or what are the most expensive neighborhoods within each borough. Along with many others, both of these questions are answered here through this repository. 
